@@ -4,16 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" />
     <title>Matrix — aruturu24</title>
-    <style>
-      html, body {
-	padding: 0;
-	margin: 0;
-	overflow: hidden;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <canvas id="canvas"></canvas>
+    <form id="options" class="hide" action="#" onsubmit="saveChanges(); return false">
+      <label for="chars">Text:</label>
+      <input type="text" id="chars" name="chars" />
+      <br />
+      <label for="color">Color:</label>
+      <input type="color" id="color" name="color" value="#00FF00"/>
+      <br />
+      <label for="rand">Randomize</label>
+      <input type="checkbox" id="rand" name="rand" checked />
+      <br />
+      <input type="submit" value="Save" />
+    </form>
     <script src="script.js"></script>
   </body>
 </html>

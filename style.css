@@ -1,0 +1,60 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+#options {
+  visibility: visible;
+  opacity: 1;
+  z-index: 200;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #111;
+  color: #eee;
+  box-shadow: 0 0 30px #222;
+  padding: 1.5em;
+  border-radius: 15px;
+
+  transition: all 1s;
+}
+
+#options label {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+}
+
+#options label:last-of-type {
+  display: inline;
+  width: 50%;
+}
+
+#options input:not(:nth-last-of-type(2)) {
+  width: 100%;
+  text-align: center;
+}
+
+#options input:not(:last-child) {
+  margin-bottom: 0.8em;
+}
+
+#options input:last-child {
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  background-color: #afa;
+  padding: 5px;
+  margin-top: 1em;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.hide {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
